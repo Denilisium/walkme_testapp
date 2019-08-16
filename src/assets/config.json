@@ -1,0 +1,5 @@
+{
+  "apiKey": "AIzaSyDtEo-s_1A7Tj79GHqLgrkFU51000oePv4",
+  "searchUrl": "https://www.googleapis.com/youtube/v3/search",
+  "youtubeSdk": "https://www.youtube.com/iframe_api"
+}

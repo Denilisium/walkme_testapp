@@ -1,0 +1,25 @@
+.container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 20rem 1fr;
+  grid-template-rows: 6rem 1fr;
+  grid-template-areas: 
+    "side top"
+    "side content";
+}
+
+app-history {
+  grid-area: side;
+  padding: 2rem 0rem 2rem 1rem;
+}
+
+app-query {
+  grid-area: top;
+  padding: 1.4rem 1rem 0 0;
+}
+
+app-player {
+  grid-area: content;
+  padding: 0 1rem 1rem 0;
+}
+

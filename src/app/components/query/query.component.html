@@ -1,0 +1,25 @@
+<mat-form-field>
+  <input matInput
+         placeholder="Search on YouTube"
+         [matAutocomplete]="auto"
+         [formControl]="videoCtrl">
+  <mat-autocomplete #auto="matAutocomplete"
+                    disableRipple="true">
+    <mat-option *ngFor="let video of suggestedVideos | async; let i = index"
+                [value]="video.title"
+                class="video-container">
+      <div class="ignore-selection"
+           (click)="ignoreSelection($event)">
+        <img class="video-thumbnail"
+             [src]="video.thumbnailUrl">
+        <span class="title">{{i}}. {{video.title}}</span>
+
+        <button mat-icon-button
+                color="primary"
+                (click)="open(video)">
+          play
+        </button>
+      </div>
+    </mat-option>
+  </mat-autocomplete>
+</mat-form-field>

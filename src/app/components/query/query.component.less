@@ -1,0 +1,35 @@
+mat-form-field {
+  width: 100%;
+  max-width: 50rem;
+}
+
+.video-container {
+  height: 60px;
+  padding: 2px;
+
+  ::ng-deep .ignore-selection {
+    display: flex;
+    align-items: center;
+    cursor: default;
+    overflow: hidden;
+
+    >img {
+      height: 50px;
+      width: 100px;
+      flex-basis: 100px;
+      object-fit: contain;
+    }
+
+    span.title {
+      flex: 1;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    >button {
+      flex-basis: 36px;
+      margin-right: 5px;
+    }
+  }
+}
